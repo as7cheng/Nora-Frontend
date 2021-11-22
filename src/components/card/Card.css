@@ -1,0 +1,6 @@
+.card {
+  margin: 0 auto;
+  display: flex;
+  grid-gap: 1rem;
+  font-size: 15px;
+}
