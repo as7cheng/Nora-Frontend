@@ -18,8 +18,8 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav variant="pills" className= "m-auto">
-            <Nav.Link href="sample">Restaurant Sample</Nav.Link>
-            <Nav.Link href="query">Query</Nav.Link>
+            <Nav.Link href="sample">Restaurant Samples</Nav.Link>
+            <Nav.Link href="query">Query Samples</Nav.Link>
             <Nav.Link href="doc">Doc</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="donate">Donate Me</Nav.Link>

@@ -30,7 +30,6 @@ function App() {
         <Route path='/donate' element={<Donate/>}/>
       </Routes>
     </Router>
-
     </>
   );
 }
