@@ -13,7 +13,7 @@ function Navigation() {
     <Navbar bg="dark" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/">
-          <Image width="60" height="auto" src={Logo} roundedCircle />
+          <Image width="40" height="auto" src={Logo} roundedCircle />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -21,8 +21,8 @@ function Navigation() {
             <Nav.Link href="sample">Restaurant Samples</Nav.Link>
             <Nav.Link href="query">Query Samples</Nav.Link>
             <Nav.Link href="doc">Doc</Nav.Link>
-            <Nav.Link href="about">About</Nav.Link>
-            <Nav.Link href="donate">Donate Me</Nav.Link>
+            <Nav.Link href="about">Tutorials</Nav.Link>
+            <Nav.Link href="donate">Donate</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

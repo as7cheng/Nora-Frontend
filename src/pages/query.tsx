@@ -69,7 +69,7 @@ function Query() {
       marginLeft: '5rem',
       marginRight: '5rem'
     }}>
-      <h1>
+      <h2>
         <Badge bg='success'>
           Based on the current data, we can do some fun queries
         </Badge>
@@ -93,7 +93,7 @@ function Query() {
             <Dropdown.Item eventKey="Portuguese">Portuguese</Dropdown.Item>
           </DropdownButton> Food
         </Badge>
-      </h1>
+      </h2>
       {console.log(topData)}
       <Top props={topData} />
     <br />

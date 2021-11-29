@@ -9,7 +9,7 @@ function DataCard(props: any) {
   };
   const data = props.props;
   return (
-    <Card className = "card" border="light" style={{ width: '15rem'}}
+    <Card className = "card" border="dark" style={{ width: '15rem'}}
     onClick={testClick}>
     <Card.Header as='h6'>{data.tags[0]}</Card.Header>
     <Card.Img variant="top" src={data.image} style={{ height: '10rem'}} />

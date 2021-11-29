@@ -16,9 +16,9 @@ import Donate from './pages/donate';
 function App() {
   return (
     <>
-     <Helmet>
-        <style>{'body { background-color: #DADED4; }'}</style>
-      </Helmet>
+     {/* <Helmet> */}
+     {/*    <style>{'body { background-color: #DADED4; }'}</style> */}
+     {/*  </Helmet> */}
       <Navigation />
       <Router>
       <Routes>
