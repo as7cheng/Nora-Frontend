@@ -1,44 +1,75 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 
 function Rank(props: any) {
-  console.log({props})
-  const endpoint = "https://wuss8io572.execute-api.us-east-1.amazonaws.com/v1/rank";
-  const url = `${endpoint}?term=${props.props}`;
-  const [data, setData] = useState([])
-  const getData = async() => {
-    let response = await axios.get(url);
-    console.log(response.data);
-    setData(response.data)
-    return response.data
-  }
 
-  useEffect(() => {
-   getData();
-  }, []);
+    console.log(typeof(props.props))
+    const data = props.props;
+    console.log(data)
 
-  function renderData(args: any) {
-    return (
-      <ul>
-        <li>city: {args.city}</li>
-        <li>state: {args.state}</li>
-        <li>restaurants/1000 poeple: {args.score}</li>
-      </ul>
-    )
-  }
+    var cities: Array<string> = [];
+    var states: Array<string> = [];
+    var ratings: Array<string> = [];
+
+    for (const k in data) {
+      cities.push(data[k].city);
+      states.push(data[k].state);
+      ratings.push("1 : " + data[k].score);
+    }
+
+    console.log(cities);
+    console.log(states);
+    console.log(ratings);
+
+
 
   return (
     <div style={{
-		display: 'grid',
-                gridTemplateColumns: 'repeat(5, 1fr)',
-                gridRowGap: '5rem',
-                gridColumnGap: '3rem',
-                margin: '5rem'
+        width: '70rem'
 		}}
                 >
-            {data.map(renderData)}
+      <Table striped bordered hover variant="dark" >
+        <thead>
+          <tr>
+            <th>Top</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Avg Restaurants</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>{cities[0]}</td>
+            <td>{states[0]}</td>
+            <td>{ratings[0]}</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>{cities[1]}</td>
+            <td>{states[1]}</td>
+            <td>{ratings[1]}</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>{cities[2]}</td>
+            <td>{states[2]}</td>
+            <td>{ratings[2]}</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>{cities[3]}</td>
+            <td>{states[3]}</td>
+            <td>{ratings[3]}</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>{cities[4]}</td>
+            <td>{states[4]}</td>
+            <td>{ratings[4]}</td>
+          </tr>
+        </tbody>
+      </Table>
     </div>
-
   )
 }
 

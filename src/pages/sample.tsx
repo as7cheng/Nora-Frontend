@@ -113,7 +113,7 @@ function Sample() {
 		display: 'grid',
                 gridTemplateColumns: 'repeat(5, 1fr)',
                 gridRowGap: '3rem',
-                gridColumnGap: '2rem',
+                gridColumnGap: '1rem',
                 margin: '2rem'
 		}}
                 >
