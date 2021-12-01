@@ -13,7 +13,7 @@ function Navigation() {
     <Navbar bg="dark" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/">
-          <Image width="40" height="auto" src={Logo} roundedCircle />
+          <Image className='logo'  src={Logo} roundedCircle />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

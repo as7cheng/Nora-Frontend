@@ -1,4 +1,4 @@
-import { Table } from 'react-bootstrap';
+import { Table, Badge } from 'react-bootstrap';
 
 function Top(props: any) {
 
@@ -11,7 +11,7 @@ function Top(props: any) {
     var ratings: Array<string> = [];
 
     for (const k in data) {
-      cities.push(data[k].city);
+      cities.push(data[k].metropolitan);
       states.push(data[k].state);
       ratings.push(data[k].score);
     }
@@ -20,19 +20,20 @@ function Top(props: any) {
     console.log(states);
     console.log(ratings);
 
-
-
   return (
     <div style={{
-        width: '70rem'
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2, 1fr)'
 		}}
                 >
+                  <div style={{
+                    width: '50rem'
+                  }}>
       <Table striped bordered hover variant="dark" >
         <thead>
           <tr>
             <th>Top</th>
-            <th>City</th>
-            <th>State</th>
+            <th>Metropolitan</th>
             <th>Avg Rating</th>
           </tr>
         </thead>
@@ -40,24 +41,38 @@ function Top(props: any) {
           <tr>
             <td>1</td>
             <td>{cities[0]}</td>
-            <td>{states[0]}</td>
             <td>{ratings[0]}</td>
           </tr>
           <tr>
             <td>2</td>
             <td>{cities[1]}</td>
-            <td>{states[1]}</td>
             <td>{ratings[1]}</td>
           </tr>
           <tr>
             <td>3</td>
             <td>{cities[2]}</td>
-            <td>{states[2]}</td>
             <td>{ratings[2]}</td>
           </tr>
-
         </tbody>
       </Table>
+    </div>
+    <div style={{
+        width: '30rem',
+        marginLeft: '3rem'
+      }}>
+      {cities[0] === undefined ? (<p></p>) :
+      <Badge bg='success' style={{
+        marginTop: '1.5rem'
+      }}>
+        <br />
+        <br />
+        <h5 style={{
+          padding: '1rem'
+        }}>Go pack your stuff, let's flight to {cities[0]}!</h5>
+        <br />
+        <br />
+    </Badge>}
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { Table } from 'react-bootstrap';
+import { Table, Badge } from 'react-bootstrap';
 
 function Rank(props: any) {
 
@@ -20,11 +20,14 @@ function Rank(props: any) {
     console.log(states);
     console.log(ratings);
 
-
-
   return (
+     <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2, 1fr)'
+		}}
+                >
     <div style={{
-        width: '70rem'
+        width: '50rem'
 		}}
                 >
       <Table striped bordered hover variant="dark" >
@@ -70,6 +73,25 @@ function Rank(props: any) {
         </tbody>
       </Table>
     </div>
+ <div style={{
+        width: '30rem',
+        marginLeft: '3rem'
+      }}>
+      {cities[0] === undefined ? (<p></p>) :
+      <Badge bg='info' text='dark' style={{
+        marginTop: '4rem'
+      }}>
+        <br />
+        <br />
+        <h5 style={{
+          padding: '1rem'
+        }}>Amazing! Move to {cities[0]} or {cities[1]}?</h5>
+        <br />
+        <br />
+    </Badge>}
+      </div>
+
+  </div>
   )
 }
 
