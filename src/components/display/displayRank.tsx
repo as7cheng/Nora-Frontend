@@ -36,7 +36,7 @@ function Rank(props: any) {
             <th>Top</th>
             <th>City</th>
             <th>State</th>
-            <th>Ratio of per restaurant : population</th>
+            <th>Ratio of Per Restaurant : Population</th>
           </tr>
         </thead>
         <tbody>
