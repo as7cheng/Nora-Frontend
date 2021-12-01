@@ -44,8 +44,8 @@ function Doc() {
      <br />
 
      <p style={{textAlign: 'left'}}>
-     This is the design doc, which only expains the ideas and processes of Nora.
-     If you want to check out more details about everyhing i.e. how to create
+     This is the design doc, which only explains the ideas and progress of Nora.
+       If you want to check out more details about everything i.e. how to create
      an app like Nora step by step, please see <a href="./about">tutorials</a>.
      </p>
 
@@ -59,9 +59,10 @@ function Doc() {
 
      <p style={{textAlign: 'left'}}>
      Nora is a restaurants-data analysis platform. All restaurant data come from
-     Yelp Fusion API, have been picked, pruned and re-formated. Users are able to
-     find restaurant data and use the analysis for own purpose. The diagram
-     above presents the overall architecture of Nora. We'll go through it later.
+     Yelp Fusion API, have been picked, pruned, and re-formated. Users are able
+     to find restaurant data and use the analysis for their own purposes. The
+     diagram above presents the overall architecture of Nora. We'll go through
+     it later.
      </p>
 
      <br />
@@ -74,18 +75,18 @@ function Doc() {
 
      <p style={{textAlign: 'left'}}>
      The main purpose of this project is to include things as many as possible
-     that I've learned in the past three months. It almost covered both option
-     1 and 2. The second purpose is to create a reliable and automatic datapipeline,
-     and a web app to provide the interaction of data queires and analysis.
+     that I've learned in the past three months. It almost covered both options
+     1 and 2. The second purpose is to create a reliable and automatic data
+     pipeline, and a web app to provide the interaction of data queries and analysis.
      </p>
 
      <p style={{textAlign: 'left'}}>
-     Nora is powerful. In this project, as an example, we also feched data of
-     Cties to do some complicated analysis based on the restaurant data and cities'
-     populations. As the data size expanding and more support data resource found
+     Nora is powerful. In this project, as an example, we also fetched data of
+     cities to do some complicated analysis based on the restaurant data and cities'
+     populations. As the data size expands and more supportive data resources are found
      (e.g. the data of income: household/year of the locations), the analysis will
-     be more procise and detailed. Based on this, no matter you want to invest a
-     restaurant, or advertise in retaurants at some specific city, Nora gives
+     be more precise and detailed. Based on this, no matter you want to invest in
+     a restaurant, or advertise in restaurants in some specific city, Nora gives
      you a good reference.
      </p>
 
@@ -127,22 +128,22 @@ function Doc() {
       <hr />
 
       <p style={{textAlign: 'left'}}>
-      To guarantee the data pipeline be independent, we should create an isolated
-      environment for it, that is, no one can find it. And we do not want to
+      To guarantee the data pipeline to be independent, we should create an isolated
+      environment for it, that is, no one can find it. Moreover, we do not want to
       fetch the data manually, right? It's boring! Thus, our need is to make
       the data pipeline completely independent and automatic.
       </p>
 
       <p style={{textAlign: 'left'}}>
-      For Data PipeLine, we use following amazing tools:
+      For Data PipeLine, we use the following amazing tools:
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
-      Yelp Fusion Api
+      Yelp Fusion API
       </li>
 
       <p style={{textAlign: 'left'}}>
-      We need good data resource. Yelp brings us this wonderful data resource.
+      We need good data resources. Yelp brings us this wonderful data resource.
       It's free and easy to use.
       </p>
 
@@ -168,7 +169,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      Make your independencies look gorgeous.
+      Make your projct dependencies look gorgeous.
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -176,7 +177,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      To connect with Database and simplify the SQL queries.
+      To connect with the Database and simplify the SQL queries.
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -193,8 +194,8 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      After we are done with all codebase of data pipeline, we build docker image
-      and pass it to ECR. ECR is just like DockerHub, where you lambda function
+      After we are done with all codebase of the data pipeline, we build docker image
+      and pass it to ECR. ECR is just like DockerHub, where the lambda function
       can implement the image.
       </p>
 
@@ -220,7 +221,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      S3 bucket is used to hold some files containing the sensitive information
+      S3 bucket is used to hold some files containing sensitive information
       that we don't want others to see.
       </p>
 
@@ -229,8 +230,8 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      We use slack app to create data pipeline log during the data process.
-      The log can provide information like amount of data fetched, the success
+      We use slack app to create logs for the data pipeline during the data process.
+      The log can provide information like the amount of data fetched, the success
       or failure of any single data entry, etc.
       </p>
 
@@ -245,14 +246,12 @@ function Doc() {
       <hr />
 
       <p style={{textAlign: 'left'}}>
-      To guarantee the data pipeline be independent, we should create an isolated
-      environment for it, that is, no one can find it. And we do not want to
-      fetch the data manually, right? It's boring! Thus, our need is to make
-      the data pipeline completely independent and automatic.
+      Once we decided on the data tables and schema, we create a database
+      instance on the cloud.
       </p>
 
       <p style={{textAlign: 'left'}}>
-      For Darabase, we use following tools:
+      For Darabase, we use the following tools:
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -260,10 +259,10 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      Since we have to make a lot of complicated analysis based on the requests,
-      we use rational database to store and handle queries. Note, we <strong>DO
-      NOT</strong> push all needed data to frontend and make calculation there.
-      This is because the huge of data will failure the HTTP request by chance
+      Since we have to make a lot of complicated calculations based on the requests,
+      we use the relational database to store and handle queries. Note, we <strong>DO
+      NOT</strong> push all needed data to frontend and make calculations there.
+      This is because a huge of data will fail the HTTP request by chance
       or slow down the delivery speed.
       </p>
 
@@ -272,9 +271,9 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      We need a place to hold our re-fromated data from data pipeline and provide
-      data for being requested by server. RDS is a good place since it's secure,
-      and has snapshots to make backup.
+      We need a place to hold our re-fromatted data from the data pipeline and provide
+      data for being requested by the server. RDS is a good place since it's secure,
+      and has snapshots to make the backup.
       </p>
 
       <br />
@@ -295,7 +294,7 @@ function Doc() {
 
       </Figure>
 
-       <p style={{textAlign: 'left'}}>
+      <p style={{textAlign: 'left'}}>
       The Above image shows the workflow and how to combine these tools.
       Still, if you want to know how to create the pipeline, go to tutorials
       where you are able to find the building process step by step.
@@ -316,13 +315,13 @@ function Doc() {
       <hr />
 
       <p style={{textAlign: 'left'}}>
-      The server part is pretty straightforward. It provides Interface for
+      The server part is pretty straightforward. It provides interfaces for
       Frontend. Its main function is to connect to Database, get data, handle
-      queires and return query results back.
+      queries and return query results back.
       </p>
 
       <p style={{textAlign: 'left'}}>
-      For Server, we use following tools:
+      For Server, we use the following tools:
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -338,7 +337,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      The framwork we use to creat the API routes. It's just amazing!
+      The framework we use to create the API routes. It's just amazing!
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -354,7 +353,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      Simple solution for cors issues.
+      A simple solution for cors issues.
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -362,7 +361,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      Almost same as SQLAlchemy. It's with simpler syntaxes. Marshmallow is
+      Almost the same as SQLAlchemy. It's with simpler syntaxes. Marshmallow is
       for serialization and deserialization.
       </p>
 
@@ -386,9 +385,9 @@ function Doc() {
       <br />
 
       <p style={{textAlign: 'left'}}>
-        The Above image shows the workflow of Server. You can see we will not
-        see any of Data Pipeline when we run server. Database is like a middle
-        point of pipeline and server.
+      The Above image shows the workflow of the Server. You may find out that
+      we will not see any of the Data pipelines running. The database is like
+      a drop box.
       </p>
 
       <br />
@@ -404,13 +403,13 @@ function Doc() {
       <hr />
 
       <p style={{textAlign: 'left'}}>
-      Frontend is not fully complete due to the we only have thousands of data.
+      The frontend is not fully complete because we only have thousands of data.
       But it's enough to show the concept of this project. The goal is to design
       a user-friendly and logical UI.
       </p>
 
       <p style={{textAlign: 'left'}}>
-      For FrontEnd, we use following tools:
+      For FrontEnd, we use the following tools:
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -434,7 +433,7 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      The components and hook function are fantasitic!
+      The components and hook function are fantastic!
       </p>
 
       <li style={{textAlign: 'left', fontWeight: 'bold'}}>
@@ -450,25 +449,25 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      We need the API management to handle all requests from frontend. The reasons
+      We need API management to handle all requests from the frontend. The reasons
       I chose API Gateway instead of connecting EC2 directly are:
 
        <ul style={{textAlign: 'left'}}>
 
         <li>
-        EC2 uses HTTP, sometimes when you fetch data e.g. using axios, will not be
+        EC2 uses HTTP, sometimes when you fetch data e.g. using Axios, will not be
         allowed.
         </li>
 
         <li>
         It's hard to solve the above problem. EC2 changes the public DNS when we
-        reboot the instance. So if we want to add SSL certificate to its address,
-        we also need to apply a Elastic IP address.
+        reboot the instance. So if we want to add the SSL certificate to its address,
+        we also need to apply an Elastic IP address.
         </li>
 
         <li>
         Since we hold frontend in S3, the above solution is not worth it. Also, API
-        Gateway performs better because its easy mode to enable cors and cache. Just
+        Gateway performs better because of the easy mode to enable cors and cache. Just
         clicks!
         </li>
 
@@ -497,8 +496,8 @@ function Doc() {
       </li>
 
       <p style={{textAlign: 'left'}}>
-      Simple solution for web distribution, make the website can be visited quickly
-      cross the world.
+      A simple solution for web distribution, make the website can be visited quickly
+      across the world.
       </p>
 
       <br />
@@ -537,12 +536,12 @@ function Doc() {
       <hr />
 
       <ul style={{textAlign: 'left'}}>
-       <li>Data tranform</li>
+       <li>Data transform</li>
        <li>Data schema design</li>
        <li>Docker images run on Lambda Function</li>
        <li>Edge cases of API requests</li>
        <li>Frontend</li>
-       <li>Configuration(domain, DNS host, distribution) for a public sites</li>
+       <li>Configuration(domain, DNS host, distribution) for public sites</li>
       </ul>
 
       <br />
@@ -554,10 +553,10 @@ function Doc() {
       <ul style={{textAlign: 'left'}}>
        <li>Deploy all AWS services under the same VPC</li>
        <li>Use AirFlow instead of Lambda + EventBridge</li>
-       <li>More data entries and support data resources</li>
+       <li>More data entries and supportive data resources</li>
        <li>Backup for RDS and EC2</li>
        <li>Better UI</li>
-       <li>Add on signup and login features and create database for users</li>
+       <li>Add on signup and login features and create a database for users</li>
       </ul>
 
 
