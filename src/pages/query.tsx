@@ -101,7 +101,7 @@ function Query() {
         <hr />
 
         <Badge bg='transparent' text='dark'>
-        The Top 3 metropolitan with the best <DropdownButton
+        The Top 3 metropolitans with the best <DropdownButton
          as={ButtonGroup} title={showTop} id="bg-nested-dropdown"
          variant='success' onSelect={handleTop}>
 
