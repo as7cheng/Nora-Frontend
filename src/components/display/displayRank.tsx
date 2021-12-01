@@ -27,7 +27,8 @@ function Rank(props: any) {
 		}}
                 >
     <div style={{
-        width: '50rem'
+      width: '50rem',
+      textAlign: 'center'
 		}}
                 >
       <Table striped bordered hover variant="dark" >
@@ -36,7 +37,7 @@ function Rank(props: any) {
             <th>Top</th>
             <th>City</th>
             <th>State</th>
-            <th>Ratio of Per Restaurant : Population</th>
+            <th>Per Restaurant : Population</th>
           </tr>
         </thead>
         <tbody>

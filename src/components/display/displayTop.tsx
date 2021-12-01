@@ -27,7 +27,8 @@ function Top(props: any) {
 		}}
                 >
                   <div style={{
-                    width: '50rem'
+                    width: '50rem',
+                    textAlign: 'center'
                   }}>
       <Table striped bordered hover variant="dark" >
         <thead>
