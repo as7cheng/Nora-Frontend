@@ -56,15 +56,21 @@ function Doc() {
       <strong>Codebase</strong>
 
       <li>
-      <a href='https://github.com/s7prime/Nora_Data-PipeLine'>Data PipeLine</a>
+        <a href='https://github.com/s7prime/Nora_Data-PipeLine' target="_blank">
+        Data PipeLine
+        </a>
       </li>
 
       <li>
-      <a href='https://github.com/s7prime/Nora-Server'>Server</a>
+        <a href='https://github.com/s7prime/Nora-Server' target="_blank">
+          Server
+        </a>
       </li>
 
       <li>
-      <a href='https://github.com/s7prime/Nora_Frontend'>Frontend</a>
+        <a href='https://github.com/s7prime/Nora_Frontend' target="_blank">
+          Frontend
+        </a>
       </li>
 
      </ul>
