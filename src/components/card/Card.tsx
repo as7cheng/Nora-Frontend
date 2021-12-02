@@ -1,15 +1,10 @@
-import React from 'react';
 import './../card/Card.css'
 import { Button, Card } from 'react-bootstrap';
 
 function DataCard(props: any) {
-  function testClick() {
-    console.log('yeah!')
-  };
   const data = props.props;
   return (
-    <Card className = "card" border="dark" style={{ width: '15rem'}}
-    onClick={testClick}>
+    <Card className = "card" border="dark" style={{ width: '15rem'}}>
     <Card.Header as='h6'><strong>{data.tags[0]}</strong></Card.Header>
     <Card.Img variant="top" src={data.image} style={{ height: '11rem'}} />
     <Card.Body>

@@ -52,9 +52,26 @@ function Doc() {
      <br />
 
      <ul style={{textAlign: 'left'}}>
-       <strong>Codebase</strong>
-     <li><a href='https://github.com/s7prime/Nora_Data-PipeLine'>Data PipeLine</a></li>
+
+      <strong>Codebase</strong>
+
+      <li>
+      <a href='https://github.com/s7prime/Nora_Data-PipeLine'>Data PipeLine</a>
+      </li>
+
+      <li>
+      <a href='https://github.com/s7prime/Nora-Server'>Server</a>
+      </li>
+
+      <li>
+      <a href='https://github.com/s7prime/Nora_Frontend'>Frontend</a>
+      </li>
+
      </ul>
+
+     <br />
+
+     <br />
 
      <h4 style={{textAlign: 'left'}}>
      What is Nora?

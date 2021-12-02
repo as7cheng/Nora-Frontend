@@ -1,8 +1,5 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
 import './App.css';
 import Navigation from './components/nav/NavBar';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
@@ -16,20 +13,23 @@ import Donate from './pages/donate';
 function App() {
   return (
     <>
-     {/* <Helmet> */}
-     {/*    <style>{'body { background-color: #DADED4; }'}</style> */}
-     {/*  </Helmet> */}
+
       <Navigation />
       <Router>
-      <Routes>
+
+       <Routes>
+
         <Route path="/" element={<Home/>}/>
         <Route path='/sample' element={<Sample/>}/>
         <Route path='/doc' element={<Doc/>}/>
         <Route path='/query' element={<Query/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/donate' element={<Donate/>}/>
-      </Routes>
-    </Router>
+
+       </Routes>
+
+      </Router>
+
     </>
   );
 }
