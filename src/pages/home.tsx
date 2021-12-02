@@ -20,9 +20,16 @@ function Home() {
        This is Nora!
        </h2>
 
-       <h5>Hi, I'm Nora, the best puppy-software-engineer in the world!</h5>
+       <h5>Hi, I'm Nora, the best puppy software engineer in the world!</h5>
+
+       <br />
+
+       <br />
 
        <hr />
+
+       <br />
+
        <br />
 
       </div>
@@ -43,30 +50,31 @@ function Home() {
 
        <div className='mb-auto' style={{
         marginRight: '5rem',
+        marginTop: '1rem',
         fontSize: '1rem',
         textAlign: 'left'
        }}>
 
         <p>
-        Let me introduce you the best restaurant-data-analysis platform, yes,
+        Let me introduce to you the best restaurant data analysis platform. Yes,
         it's named as my name - Nora. The sites are still under development, so
         if you feel the UI design is ugly, that must be your problem.
         </p>
 
         <p>
-        This platform is built on so many stuff. If you want to see the design
-        doc, please go to the doc section. If you want to learn how to build a
-        same web application with a fantastic data-pipeline, go check out the
-        tutorials section. If you want to play around with current data in our
-        database, try data samples and query samples. Ya, I know there are only
-        two query examples. Don't judge me, we only have few data for now. But
-        if you are a kind person, you can donate us to update the service tier
-        on AWS. That said, you'll enjoy the huge amount of data brought by money
-        power. See? Donate button is at the top-right corner.
+        This platform is built on so much stuff. If you want to see the design
+        doc, please go to the doc section. If you want to learn how to build
+        the same web application with a fantastic data pipeline, go check out
+        the tutorials section. If you want to play around with current data in
+        our database, try data samples and query samples. Ya, I know there are
+        only two query examples. Don't judge me, we only have a few data for now.
+        But if you are a kind person, you can donate to us to update the service
+        tier on AWS. That said, you'll enjoy the huge amount of data brought by
+        money power. See? Donate button is at the top-right corner.
         </p>
 
         <p>
-        OK, you can leave the home page and click the navigation bars and hang
+        OK, you can leave the home page now. Click the navigation bars and hang
         around this beautiful place.
         </p>
 
