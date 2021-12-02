@@ -7,17 +7,14 @@ function Top(props: any) {
     console.log(data)
 
     var cities: Array<string> = [];
-    var states: Array<string> = [];
     var ratings: Array<string> = [];
 
     for (const k in data) {
       cities.push(data[k].metropolitan);
-      states.push(data[k].state);
       ratings.push(data[k].score);
     }
 
     console.log(cities);
-    console.log(states);
     console.log(ratings);
 
   return (
