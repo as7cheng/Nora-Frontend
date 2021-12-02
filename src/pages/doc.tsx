@@ -1,4 +1,4 @@
-import { Figure, Image } from 'react-bootstrap';
+import { Figure } from 'react-bootstrap';
 import Overall from './../logo/overall.png';
 import Pipeline from './../logo/pipeline.png';
 import Server from './../logo/server.png';
@@ -45,11 +45,16 @@ function Doc() {
 
      <p style={{textAlign: 'left'}}>
      This is the design doc, which only explains the ideas and progress of Nora.
-       If you want to check out more details about everything i.e. how to create
+     If you want to check out more details about everything i.e. how to create
      an app like Nora step by step, please see <a href="./about">tutorials</a>.
      </p>
 
      <br />
+
+     <ul style={{textAlign: 'left'}}>
+       <strong>Codebase</strong>
+     <li><a href='https://github.com/s7prime/Nora_Data-PipeLine'>Data PipeLine</a></li>
+     </ul>
 
      <h4 style={{textAlign: 'left'}}>
      What is Nora?

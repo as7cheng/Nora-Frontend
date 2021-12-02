@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import DataCard from '../components/card/Card';
 import { Button, ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
-import './sample.css';
+import './css/sample.css';
 
 function Sample() {
   const [city, setCity] = useState([] as any[])
