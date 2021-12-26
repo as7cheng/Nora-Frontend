@@ -2,11 +2,12 @@ import './App.css';
 import Navigation from './components/nav/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Explore from './pages/explore';
-import Profile from './pages/profile';
-import Signup from './pages/signup';
-import Signin from './pages/signin';
 import Home from './pages/home';
+import Sample from './pages/sample';
+import Query from './pages/query';
+import Doc from './pages/doc';
+import About from './pages/about';
+import Donate from './pages/donate';
 
 
 function App() {
@@ -18,11 +19,13 @@ function App() {
 
        <Routes>
 
-        <Route path="/" element={<Home />} />
-        <Route path='/explore' element={<Explore />} />
-        <Route path='/profile' element={<Profile />}/>
-        <Route path='/signin' element={<Signin />} />
-        <Route path='/signup' element={<Signup />} />
+        <Route path="/" element={<Home/>}/>
+        <Route path='/sample' element={<Sample/>}/>
+        <Route path='/doc' element={<Doc/>}/>
+        <Route path='/query' element={<Query/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/donate' element={<Donate/>}/>
+
        </Routes>
 
       </Router>
